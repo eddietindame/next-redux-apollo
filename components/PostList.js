@@ -9,7 +9,7 @@ function PostList ({
   data: { loading, error, allPosts, _allPostsMeta },
   loadMorePosts
 }) {
-  if (error) return <ErrorMessage message='Error loading posts.' />
+  if (error) return <ErrorMessage message={error.message} />
   if (allPosts && allPosts.length) {
     const areMorePosts = allPosts.length < _allPostsMeta.count
     return (

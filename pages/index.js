@@ -13,6 +13,7 @@ import Header from '../components/Header'
 import Page from '../components/Page'
 import Submit from '../components/Submit'
 import PostList from '../components/PostList'
+import Test from '../components/Test'
 import withApollo from '../lib/withApollo'
 
 class Index extends Component {
@@ -39,6 +40,7 @@ class Index extends Component {
                 <Page title='Index' />
                 <Submit />
                 <PostList />
+                <Test />
             </App>
         )
     }
